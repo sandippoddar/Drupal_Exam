@@ -1,0 +1,37 @@
+uuid: a298b6fb-c349-4040-8777-47245c8895eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_home
+    - node.type.page
+    - paragraphs.paragraphs_type.homepage_banner
+  module:
+    - entity_reference_revisions
+id: node.page.field_banner_home
+field_name: field_banner_home
+entity_type: node
+bundle: page
+label: 'Banner home'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      homepage_banner: homepage_banner
+    negate: 0
+    target_bundles_drag_drop:
+      homepage_banner:
+        weight: 4
+        enabled: true
+      product_banner:
+        weight: 5
+        enabled: false
+      product_image:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

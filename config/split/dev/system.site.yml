@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: 30004c58-8952-4cfc-85c2-a4b3e46961c7
+name: 'Drupal Test'
+mail: sandip.poddar@innoraft.com
+slogan: ''
+page:
+  403: /node/110
+  404: /node/109
+  front: /node/87
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

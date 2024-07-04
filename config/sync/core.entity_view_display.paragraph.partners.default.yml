@@ -1,0 +1,27 @@
+uuid: 32686dd4-757a-4670-839d-b865ceb85d4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partners.field_brand_image
+    - image.style.medium
+    - paragraphs.paragraphs_type.partners
+  module:
+    - image
+id: paragraph.partners.default
+targetEntityType: paragraph
+bundle: partners
+mode: default
+content:
+  field_brand_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
