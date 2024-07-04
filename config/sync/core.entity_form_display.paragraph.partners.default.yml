@@ -1,0 +1,26 @@
+uuid: 07623ee0-a1be-4878-b77e-1ce4f3815518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partners.field_brand_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.partners
+  module:
+    - image
+id: paragraph.partners.default
+targetEntityType: paragraph
+bundle: partners
+mode: default
+content:
+  field_brand_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

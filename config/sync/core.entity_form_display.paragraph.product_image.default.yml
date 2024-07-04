@@ -1,0 +1,26 @@
+uuid: 0d5e1209-d963-43fc-b52f-4ba046406dcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_image.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.product_image
+  module:
+    - image
+id: paragraph.product_image.default
+targetEntityType: paragraph
+bundle: product_image
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,26 @@
+uuid: f6954f90-a7dc-46f2-9424-ed6aee6ce407
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about.field_brands
+    - field.field.node.about.field_logo
+    - field.field.node.about.field_para
+    - node.type.about
+  module:
+    - user
+id: node.about.teaser
+targetEntityType: node
+bundle: about
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_brands: true
+  field_logo: true
+  field_para: true

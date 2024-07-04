@@ -1,0 +1,51 @@
+uuid: 947350cc-328c-4231-bd75-29d9e7ed7b52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about.field_brands
+    - field.field.node.about.field_logo
+    - field.field.node.about.field_para
+    - node.type.about
+  module:
+    - entity_reference_revisions
+    - image
+    - user
+id: node.about.default
+targetEntityType: node
+bundle: about
+mode: default
+content:
+  field_brands:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_para:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: ec72bbca-dc9d-41ef-9964-cb6cd55aa270
+langcode: en
+status: true
+dependencies: {  }
+id: partners
+label: Partners
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
